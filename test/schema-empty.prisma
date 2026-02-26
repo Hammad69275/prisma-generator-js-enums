@@ -1,0 +1,12 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator jsEnums {
+  provider = "tsx src/bin.ts"
+  output   = "../test/generated-empty"
+}
+
+model User {
+  id Int @id @default(autoincrement())
+}

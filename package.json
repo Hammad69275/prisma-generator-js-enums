@@ -1,0 +1,42 @@
+{
+  "name": "prisma-generator-js-enums",
+  "version": "1.0.0",
+  "description": "Prisma generator that creates JavaScript enum objects from Prisma schema enums",
+  "main": "dist/generator.js",
+  "bin": {
+    "prisma-generator-js-enums": "dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "prisma",
+    "generator",
+    "enum",
+    "javascript"
+  ],
+  "author": "Hammad69275",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hammad69275/prisma-generator-js-enums.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hammad69275/prisma-generator-js-enums/issues"
+  },
+  "homepage": "https://github.com/Hammad69275/prisma-generator-js-enums#readme",
+  "type": "commonjs",
+  "peerDependencies": {
+    "@prisma/generator-helper": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.1",
+    "jest": "^30.2.0",
+    "prisma": "^7.4.1",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

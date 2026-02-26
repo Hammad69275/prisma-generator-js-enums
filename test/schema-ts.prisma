@@ -1,0 +1,37 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator tsEnums {
+  provider   = "tsx src/bin.ts"
+  output     = "../test/generated-ts"
+  outputType = "ts"
+}
+
+enum Role {
+  USER
+  ADMIN
+  MODERATOR
+}
+
+enum Status {
+  ACTIVE
+  INACTIVE
+  PENDING
+}
+
+enum Color {
+  RED
+  GREEN
+  BLUE
+}
+
+enum Singleton {
+  ONLY
+}
+
+model User {
+  id     Int    @id @default(autoincrement())
+  role   Role
+  status Status
+}
