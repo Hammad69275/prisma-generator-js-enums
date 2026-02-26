@@ -1,6 +1,6 @@
 {
   "name": "prisma-generator-js-enums",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prisma generator that creates JavaScript enum objects from Prisma schema enums",
   "main": "dist/generator.js",
   "bin": {
